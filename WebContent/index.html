@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Food Nutrition Facts</title>
+<!-- 웹페이지 제목 -->
+<style> /*css 스타일 정의*/
+body { /*bottom 바깥 여백 설정*/
+	margin-bottom: 120px;
+}
+
+footer { /*바닥 글 정의*/
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+}
+
+.table { /*table class selector 정의*/
+	border-collapse: collapse;
+	border-top: 3px solid hotpink;
+	text-align: center;
+	width: 90%;
+	margin: auto;
+}
+
+.table th { /*헤더 셀 정의*/
+	background: pink;
+	text-align: center;
+}
+
+.table th, .table td { /*전체 셀 정의*/
+	padding: 10px;
+	border: 1px solid #ddd;
+}
+
+.table th:first-child, .table td:first-child { /*첫번째 열 테두리 제거*/
+	border-left: 0;
+}
+
+.table th:last-child, .table td:last-child { /*마지막 열 테두리 제거*/
+	border-right: 0;
+}
+
+.table tr td:first-child { /*텍스트 가운데 정렬*/
+	text-align: center;
+}
+
+.table caption { /*table caption 정의*/
+	caption-side: bottom;
+	font-size: 14px;
+	color: silver;
+	position: relative;
+	top: 20px;
+	text-align: right;
+}
+</style>
+</head>
+<body
+	style="font-family: 맑은 고딕, 돋움, dotum, 굴림, gulim, arial; padding: 40px; margin: 35px;">
+	<!-- 글씨체:맑은 고딕, 안쪽 여백:40px 바깥 여백:35px-->
+	<a style="text-decoration: none;" href="index.html"> <!-- 링크="index.html", 밑줄 표시 X -->
+		<h1
+			style="text-align: center; font-family: arial; font-size: 50px; color: deeppink;">
+			Food Nutrition Facts</h1> <!-- 텍스트 가운데 정렬, 글씨체:arial, 글씨 크기:50px, 글씨 색상:deeppink -->
+	</a>
+	<table class="table" style="width: 70%; margin-top: 50px;">
+		<!-- table class="table", 너비:70% top margin:50px-->
+
+		<caption>식품 이름을 클릭하면 식품영양정보를 볼 수 있습니다.</caption>
+		<tr>
+			<!-- 제목 행 -->
+			<th width=50>No</th>
+			<th width=300>Name</th>
+			<th width=100>kcal(per 100g)</th>
+		</tr>
+		<tr>
+			<!-- 두번째 열 클릭하면 "hamburger.html"로 이동 -->
+			<td>1</td>
+			<td><a href="hamburger.html"
+				style="text-decoration: none; color: black;">햄버거, 조리</a></td>
+			<td>271.00</td>
+		</tr>
+		<tr>
+			<!-- 두번째 열 클릭하면 "coke.html"로 이동 -->
+			<td>2</td>
+			<td><a href="coke.html"
+				style="text-decoration: none; color: black;">탄산음료, 콜라</a></td>
+			<td>47.00</td>
+		</tr>
+		<tr>
+			<!-- 두번째 열 클릭하면 "frenchfries.html"로 이동 -->
+			<td>3</td>
+			<td><a href="frenchfries.html"
+				style="text-decoration: none; color: black;">감자 가공(기타),
+					감자튀김(후렌치후라이), 튀긴것</a></td>
+			<td>319.00</td>
+		</tr>
+	</table>
+
+	<footer>
+		<hr size="1px" style="position: relative; bottom: 0px;">
+		<!-- 구분선 굵기:1px, 위치:바닥 -->
+		<p
+			style="float: right; position: relative; right: 20px; font-style: italic;">
+			출처 : <a href="https://www.foodsafetykorea.go.kr/main.do"
+				target="_blank">식품안전나라(https://www.foodsafetykorea.go.kr/</a>)
+		</p>
+		<!-- 오른쪽에서 20px 떨어져서 정렬, italic체, 링크="식품안전나라", 새 창으로 이동 -->
+	</footer>
+</body>
+</html>
